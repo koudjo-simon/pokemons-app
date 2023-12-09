@@ -1,0 +1,4 @@
+firebase --version ====> Pour vérifier la version de firebase installé
+firebase login ====> Se connecter
+firebase init =====> permet de faire quelques configurations de base
+firebase deploy =====> permet de déployer l'application en ligne

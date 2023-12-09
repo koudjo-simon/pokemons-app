@@ -1,5 +1,7 @@
 <div class="conteiner">
+  <h1 class="center">Liste de Pokemons</h1>
   <div class="row">
+    <app-search-pokemon></app-search-pokemon>
     <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
       <div
         (click)="goToPokemon(pokemon)"
@@ -27,3 +29,14 @@
     </div>
   </div>
 </div>
+
+<h3 *ngIf="!pokemonList" class="center">
+  <app-loader></app-loader>
+</h3>
+
+<a
+  class="btn-floating btn-large waves-effect waves-light red z-depth-3"
+  style="position: fixed; bottom: 25px; right: 25px"
+  routerLink="/pokemon/add"
+  >+</a
+>
